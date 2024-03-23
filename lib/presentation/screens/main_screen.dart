@@ -6,6 +6,7 @@ import 'package:fake_fireman/config/config.dart';
 import 'package:fake_fireman/model/credit_card.dart';
 import 'package:fake_fireman/model/transaction.dart';
 import 'package:fake_fireman/presentation/screens/feedback_screen.dart';
+import 'package:fake_fireman/presentation/screens/maintenance_screen.dart';
 import 'package:fake_fireman/presentation/screens/statics_screen.dart';
 import 'package:fake_fireman/presentation/widgets/chart.dart';
 import 'package:fake_fireman/presentation/widgets/rainbow.dart';
@@ -118,6 +119,13 @@ class _MainScreenState extends State<MainScreen>
                                 // Navigate to Home screen
                                 break;
                               case 1:
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //       builder: (context) => MaintenanceScreen(
+                                //             preferences:  ,
+                                //           )),
+                                // );
                                 // Navigate to Photo screen
                                 break;
                               case 3:
@@ -226,8 +234,11 @@ class _MainScreenState extends State<MainScreen>
                                   child: Text(
                                     'Your cards',
                                     style: TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold),
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors
+                                          .white, // Set text color to white
+                                    ),
                                   ),
                                 ),
                                 ClipRRect(
@@ -321,15 +332,18 @@ class _MainScreenState extends State<MainScreen>
                                       Text(
                                         'Transactions',
                                         style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w500),
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors
+                                              .white, // Set text color to white
+                                        ),
                                       ),
                                       SizedBox(
                                         height: mediumDistance,
                                       ),
                                       Text(
                                         '25.10',
-                                        style: TextStyle(color: Colors.grey),
+                                        style: TextStyle(color: Colors.white),
                                       )
                                     ],
                                   ),
@@ -649,7 +663,7 @@ class _MainScreenState extends State<MainScreen>
                           bottom: largeDistance,
                           child: Text.rich(
                             TextSpan(
-                              text: "\$ ",
+                              text: " ",
                               style: const TextStyle(
                                   fontWeight: FontWeight.w600, fontSize: 32),
                               children: <TextSpan>[

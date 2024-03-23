@@ -80,8 +80,11 @@ class _StaticsScreenState extends State<StaticsScreen>
                     child: Text(
                       'Statics',
                       textAlign: TextAlign.center,
-                      style:
-                          TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white, // Set text color to white
+                      ),
                     ),
                   )),
               GestureDetector(
@@ -257,11 +260,15 @@ class _StaticsScreenState extends State<StaticsScreen>
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
-                                  'Income',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 16),
+                                // const Text(
+                                //   'Income',
+                                //   style: TextStyle(
+                                //       fontWeight: FontWeight.w500,
+                                //       fontSize: 16),
+                                // ),
+                                Icon(
+                                  Icons.safety_check_rounded,
+                                  color: Colors.green,
                                 ),
                                 const Expanded(child: SizedBox()),
                                 Container(
@@ -280,7 +287,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                                 Container(
                                   alignment: Alignment.centerRight,
                                   child: const Text(
-                                    "100% Goal",
+                                    "93% Efficency",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 16,
@@ -313,7 +320,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                                           fontSize: 16),
                                     ),
                                     Icon(
-                                      Icons.account_balance,
+                                      Icons.dangerous_rounded,
                                       color: Colors.red,
                                     )
                                   ],
@@ -322,7 +329,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                                 Container(
                                   alignment: Alignment.centerRight,
                                   child: const Text(
-                                    "14'006.00",
+                                    "14'006.0",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 24,
@@ -335,7 +342,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                                 Container(
                                   alignment: Alignment.centerRight,
                                   child: const Text(
-                                    "112% Goal",
+                                    "OVER HEAT",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 16,
@@ -353,9 +360,12 @@ class _StaticsScreenState extends State<StaticsScreen>
                             horizontal: mediumDistance,
                             vertical: mediumDistance),
                         child: Text(
-                          'Spending summary',
+                          'Equipmnet Reading',
                           style: TextStyle(
-                              fontWeight: FontWeight.w500, fontSize: 16),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: Colors.white, // Set text color to white
+                          ),
                         )),
                     Expanded(
                       child: Padding(

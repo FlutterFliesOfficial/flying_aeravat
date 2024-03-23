@@ -48,7 +48,7 @@ class _SpendingItemWidgetState extends State<SpendingItemWidget>
                   height: 4,
                 ),
                 Text(
-                  "${widget.spending.amount} PLN",
+                  "${widget.spending.amount} ",
                   style: const TextStyle(color: Colors.grey),
                 ),
               ],

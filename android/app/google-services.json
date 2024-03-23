@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "101879127087",
+    "project_id": "fakefireman-b65bf",
+    "storage_bucket": "fakefireman-b65bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101879127087:android:2b57fadda56d346a94fada",
+        "android_client_info": {
+          "package_name": "com.example.fake_fireman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAX9hN69RdfGSbJ4yfE4Qz9BFVeZdXT4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
