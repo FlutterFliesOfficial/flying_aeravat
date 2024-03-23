@@ -185,13 +185,18 @@ class _StaticsScreenState extends State<StaticsScreen>
                               Text(
                                 'Monthly limit',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.w500, fontSize: 16),
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16,
+                                  color:
+                                      Colors.white, // Set text color to white
+                                ),
                               ),
                               Text.rich(
                                 TextSpan(
                                   text: '907.21',
                                   style: TextStyle(
                                     fontSize: 16,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.w500,
                                   ),
                                   children: <TextSpan>[

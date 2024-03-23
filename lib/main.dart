@@ -1,6 +1,8 @@
 import 'package:fake_fireman/bloc_state_observer.dart';
 import 'package:fake_fireman/config/config.dart';
+import 'package:fake_fireman/firebase_options.dart';
 import 'package:fake_fireman/presentation/screens/main_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:motion/motion.dart';
@@ -8,6 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   // WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = BlocStateOberver();
   SharedPreferences preferences = await SharedPreferences.getInstance();

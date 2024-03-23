@@ -7,6 +7,7 @@ import 'package:fake_fireman/model/credit_card.dart';
 import 'package:fake_fireman/model/transaction.dart';
 import 'package:fake_fireman/presentation/screens/feedback_screen.dart';
 import 'package:fake_fireman/presentation/screens/maintenance_screen.dart';
+import 'package:fake_fireman/presentation/screens/manthan.dart';
 import 'package:fake_fireman/presentation/screens/statics_screen.dart';
 import 'package:fake_fireman/presentation/widgets/chart.dart';
 import 'package:fake_fireman/presentation/widgets/rainbow.dart';
@@ -129,6 +130,11 @@ class _MainScreenState extends State<MainScreen>
                                 // Navigate to Photo screen
                                 break;
                               case 3:
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => manthan()),
+                                );
                                 // Navigate to Feedback screen
 
                                 break;
