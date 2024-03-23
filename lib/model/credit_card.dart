@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CreditCard {
   String cardNumber;
   String date;
-  double cardBalance;
+  String cardBalance;
 
   Color color1;
   Color color2;

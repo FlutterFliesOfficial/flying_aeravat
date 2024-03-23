@@ -39,22 +39,22 @@ class _MainScreenState extends State<MainScreen>
 
   final cards = [
     CreditCard(
-        cardNumber: "6104 3355 5688 9231",
-        cardBalance: 1525,
+        cardNumber: "Turbine Machine",
         date: "7/14",
+        cardBalance: "can fail!",
         color1: const Color(0xffFA5D55),
         color2: const Color(0xffF5B367),
         color3: const Color(0xffF68966)),
     CreditCard(
-        cardNumber: "6104 3375 4125 3697",
-        cardBalance: 250,
+        cardNumber: "pressure array",
+        cardBalance: "working fine!",
         date: "8/01",
         color1: const Color(0xff7955fa),
         color2: const Color(0xff6c67f5),
         color3: const Color(0xff6688f6)),
     CreditCard(
-        cardNumber: "6104 3381 4654 3364",
-        cardBalance: 3940,
+        cardNumber: "exhaust clearing",
+        cardBalance: "working good!",
         date: "10/29",
         color1: const Color(0xff55fa58),
         color2: const Color(0xff75f567),
@@ -62,9 +62,9 @@ class _MainScreenState extends State<MainScreen>
   ];
 
   final transactions = [
-    Transaction("Pasibus", "Food", 29.92, Icons.bus_alert_sharp),
-    Transaction("Cinema City", "Entertainment", 20.00,
-        Icons.video_camera_back_outlined),
+    //  Transaction("Pasibus", "Food", 29.92, Icons.machine),
+    // Transaction("Cinema City", "Entertainment", 20.00,
+    //     Icons.video_camera_back_outlined),
   ];
 
   @override
@@ -238,7 +238,7 @@ class _MainScreenState extends State<MainScreen>
                               children: [
                                 const Expanded(
                                   child: Text(
-                                    'Your cards',
+                                    'Your Environment',
                                     style: TextStyle(
                                       fontSize: 24,
                                       fontWeight: FontWeight.bold,

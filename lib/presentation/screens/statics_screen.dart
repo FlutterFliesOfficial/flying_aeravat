@@ -183,7 +183,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Monthly limit',
+                                'Overall Efficency',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16,
@@ -193,7 +193,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                               ),
                               Text.rich(
                                 TextSpan(
-                                  text: '907.21',
+                                  text: '90.21',
                                   style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.white,
@@ -201,7 +201,7 @@ class _StaticsScreenState extends State<StaticsScreen>
                                   ),
                                   children: <TextSpan>[
                                     TextSpan(
-                                      text: "/2'000.00",
+                                      text: "/100.00%",
                                       style: TextStyle(
                                         fontSize: 16,
                                         color: Colors.grey,
